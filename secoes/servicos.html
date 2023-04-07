@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Serviços</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' id="css-secoes" type='text/css' media='screen' href='../css/style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="verificar_tema_secoes()">
+    <header>
+        <p>Juliano Schaurich</p>
+        <a href="javascript:void(0);" class="icon" onclick="nav()">
+            <i class="fa fa-bars"></i>
+          </a>
+    </header>
+    
+    <nav id="nav">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="orcamento.html">Orçamento</a></li>
+            <li><a href="quem-sou.html">Quem sou</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <section class="section-servicos">
+            <div class="container-servicos">
+                <img class="img-servicos" src="../imagens/img-servico-1.jpg">
+            <article>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eius!
+                </p>
+            </article>
+            </div>
+            
+            <div class="container-servicos">
+                <img class="img-servicos" src="../imagens/img-servico-2.png">
+            <article>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eius!
+                </p>
+            </article>
+            </div>
+    
+            <div class="container-servicos">
+                <img class="img-servicos" src="../imagens/img-servico-3.jpg">
+            <article>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eius!
+                </p>
+            </article>
+            </div>
+        </section>
+    </div>
+
+    <button onclick="changeColorSecoes()">
+        <p id="p-theme">d</p>
+        <img id = "img-botao-secoes" src="../imagens/img-lua.png">
+    </button>
+
+    <footer>
+        <div>
+            <p>Programação Web - Juliano Schaurich</p>
+        </div>
+    </footer>
+    <script src='../js/script.js'></script>
+</body>
+</html>

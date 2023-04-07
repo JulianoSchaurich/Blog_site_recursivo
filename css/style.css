@@ -1,0 +1,325 @@
+:root{
+    --cor-header: #f8f9fa;
+    --cor-borda: darkgray;
+    --cor-footer: #e9ecef;
+}
+
+*{
+    font-family: Gill Sans, sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*HEADER*/
+header{
+    grid-area: header;
+    background-color: var(--cor-footer);
+    height: 150px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+header p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 260%;
+}
+
+.icon{
+    position: absolute;
+    right: 20px;
+    display: none;
+}
+
+/*NAV*/
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-header);
+    border-bottom: 1px solid darkgray;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    
+}
+
+nav ul li{
+    padding: 15px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: calc(20px + 4* ((100vw - 320px) / 680));
+    font-weight: bold;
+}
+
+/*FOOTER*/
+footer{
+    color: black;
+    background-color: var(--cor-footer);
+    border-top: 1px solid var(--cor-borda);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div{
+    width: 50%;
+    border-bottom: 1px solid darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    text-decoration: none;
+    font-size: calc(10px + 2* ((100vw - 320px) / 680));
+    padding-bottom: 15px;
+}
+
+/*SECAO CARROSEL*/
+.section-carrosel {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.img-carrosel{
+    height: 400px;
+    width: 700px;
+}
+
+/*SECAO INDEX*/
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-index{
+    height: 400px;
+    width: 400px;
+}
+
+.container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid var(--cor-borda);
+}
+
+.article{
+    width: 600px;
+}
+
+.text {
+    padding: 40px;
+    font-size: calc(16px + 6* ((100vw - 320px) / 680));;
+}
+
+/*SECAO QUEM SOU*/
+
+.img-quem-sou{
+    height: 450px;
+    width: 50%;
+    padding-top: 100px;
+}
+
+.article-quem-sou{
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/*SECAO SERVICOS*/
+.section-servicos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-servicos{
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.img-servicos{
+    height: 200px;
+    width: 200px;
+}
+
+/*ORCAMENTO*/
+.section-orcamento{
+    height: 750px;
+}
+
+/*PORTIFOLIO*/
+.section-portifolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container-portifolio{
+    width: 18%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    padding: 1%;
+}
+
+.img-portifolio{
+    height: 200px;
+    width: 100%;
+}
+
+.text-portifolio{
+    padding: 10px;
+    font-weight: bold;
+    font-size: calc(10px + 4* ((100vw - 320px) / 680));;
+}
+
+/*BUTTON*/
+button{
+    position:fixed;
+    height: 100px;
+    width: 100px;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+button img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+button p{
+    display: none;
+}
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 900px) {
+    header{
+        display: flex;
+        height: 100px;
+    }
+    header p{
+        font-size: 180%;
+    }
+    .icon{
+        display:block;
+    }
+    nav{
+        height: 100%;
+        width: 150px;
+        top: 0;
+        left: 0;
+        position: fixed;
+        align-items: flex-start;
+        display: none;
+        z-index: 1;
+        background-color: var(--cor-borda);
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 15px;
+    }
+    nav ul li a{
+        text-align: left;
+        text-decoration: none;
+        font-size: calc(20px + 4* ((100vw - 320px) / 680));
+        font-weight: bold;
+    }
+    .container{
+        width: 100%;
+    }
+    .img-index{
+        display: none;
+    }
+    .article{
+        width: 100%;
+    }
+    .img-carrosel{
+        width: 100%;
+    }
+    .section-carrosel{
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    footer div{
+        width: 100%;
+    }
+    .img-quem-sou{
+        height: 80%;
+        width: 80%;
+    }
+    .article-quem-sou{
+        width: 100%;
+    }
+    .container-servicos{
+        width: 100%;
+    }
+    .section-portifolio{
+        margin: 0;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .container-portifolio{
+        width: 60%; 
+        padding-bottom: 5px;
+    }
+    .img-portifolio{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .section-portifolio{
+        margin: 0;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .container-portifolio{
+        width: 100%;
+        padding: 0;
+        padding-bottom: 5px;
+    }
+    .article-quem-sou{
+        height: 300px;
+    }
+}

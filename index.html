@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Inicio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' id="css" type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/carousel.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="verificar_tema()">
+    <header>
+        <p>Juliano Schaurich</p>
+        <a href="javascript:void(0);" class="icon" onclick="nav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
+    
+    <nav id="nav">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="secoes/portifolio.html">Portifólio</a></li>
+            <li><a href="secoes/servicos.html">Serviços</a></li>
+            <li><a href="secoes/orcamento.html">Orçamento</a></li>
+            <li><a href="secoes/quem-sou.html">Quem sou</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <section class="section-carrosel">
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <img class="img-carrosel" src="imagens/imagem1.webp">
+                </div>
+              
+                <div class="mySlides fade">
+                  <img class="img-carrosel" src="imagens/imagem2.jpg">
+                </div>
+              
+                <div class="mySlides fade">
+                  <img class="img-carrosel" src="imagens/imagem3.jpg">
+                </div>
+            </div>
+              
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+        <!-- Slideshow container -->
+    
+        <section class="section">
+            <div class="container">
+                <article class="article">
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit velit mollitia rem voluptate sit ut itaque commodi reiciendis voluptates deleniti incidunt architecto corporis quae, odit illo eum eos officia. Voluptatibus.
+                    </p>
+                </article>
+                <img class="img-index" src="imagens/imagem-index-1.jpeg">
+            </div>
+    
+            <div class="container">
+                <img class="img-index" src="imagens/imagem-index-2.jpg">
+                <article class="article">
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit velit mollitia rem voluptate sit ut itaque commodi reiciendis voluptates deleniti incidunt architecto corporis quae, odit illo eum eos officia. Voluptatibus.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </div>
+    
+    <button onclick="changeColor()">
+        <p id="p-theme">id</p>
+        <img id = "img-botao" src="imagens/img-lua.png">
+    </button>
+
+    <footer>
+        <div>
+            <p>Programação Web - Juliano Schaurich</p>
+        </div>
+    </footer>
+
+    <script src='js/script.js'></script>
+    <script src='js/script-carousel.js'></script>
+</body>
+</html>

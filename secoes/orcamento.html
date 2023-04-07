@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Orcamento</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' id="css-secoes" type='text/css' media='screen' href='../css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/form.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="verificar_tema_secoes()">
+    <header>
+        <p>Juliano Schaurich</p>
+        <a href="javascript:void(0);" class="icon" onclick="nav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
+    
+    <nav id="nav">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="orcamento.html">Portifólio</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="#">Orçamento</a></li>
+            <li><a href="quem-sou.html">Quem sou</a></li>
+        </ul>
+    </nav>
+    
+    <div class="content">
+        <section>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ex quasi sint harum fuga aut et aperiam cum, dolores quas eveniet rerum excepturi repudiandae officia quae mollitia? Ipsum, eveniet rem.
+          </p>
+        </section>
+        
+        <section class="section-orcamento">
+              <div id="form-main">
+                <div id="form-div">
+                  <form class="form" name = "form" id="form1" onsubmit="return(validar_form());">
+                    
+                    <p class="name">
+                      <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Seu Nome" id="name" />
+                    </p>
+                    
+                    <p class="email">
+                      <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Seu Email" />
+                    </p>
+                    
+                    <p class="text">
+                      <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Sua Menssagem"></textarea>
+                    </p>
+                    
+                    <div class="submit">
+                      <input type="submit" value="ENVIAR" id="button-blue"/>
+                      <div class="ease"></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          </section>
+    </div>
+    
+    <button onclick="changeColorSecoes()">
+        <p id="p-theme">d</p>
+        <img id = "img-botao-secoes" src="../imagens/img-lua.png">
+    </button>
+
+    <footer>
+        <div>
+            <p>Programação Web - Juliano Schaurich</p>
+        </div>
+    </footer>
+    <script src='../js/script.js'></script>
+</body>
+</html>
